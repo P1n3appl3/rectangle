@@ -64,15 +64,14 @@ fn main() -> ! {
 
     let mut serial = SerialPort::new(&usb_bus);
 
-    // Create a USB device with a fake VID and PID
-    let mut usb_dev = UsbDeviceBuilder::new(&usb_bus, UsbVidPid(0x16c0, 0x27dd))
-        .manufacturer("Fake company")
-        .product("Serial port")
+    let mut usb_dev = UsbDeviceBuilder::new(&usb_bus, UsbVidPid(0x2E8A, 0x10A1))
+        .manufacturer("GRAMCTRL LLC")
+        .product("GRAM Slim Smash")
         .serial_number("TEST")
         .device_class(2) // from: https://www.usb.org/defined-class-codes
         .build();
 
     loop {
-        serial.write(b"Hello, World!\n");
+        serial.write(b"Hello, World!\n\r");
     }
 }

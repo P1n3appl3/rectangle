@@ -21,3 +21,10 @@ for hardware: https://github.com/grammymoney/gram-slim (rp-2040)
 
 
 <!-- TODO: grammar for linker files!? -->
+
+## planned modes
+- gamecube (melee)
+- twinstick cardinals only
+- all keyboard keys
+- snes (see [docs](https://docs.handheldlegend.com/s/portal/doc/snes-retro-c-cable-information-pjC3AfoRNK))
+- maybe n64/rivals?

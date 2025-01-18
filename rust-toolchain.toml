@@ -1,4 +1,13 @@
 [toolchain]
-channel = "1.75.0"
-components = [ "rustc", "cargo", "rustfmt", "rust-std", "rust-analyzer", "rust-docs", "clippy", "rust-src" ]
-targets = [ "thumbv6m-none-eabi" ]
+channel = "1.80.1"
+components = [
+  "rustc",
+  "cargo",
+  "rustfmt",
+  "rust-std",
+  "rust-analyzer",
+  "rust-docs",
+  "clippy",
+  "rust-src",
+]
+targets = ["thumbv6m-none-eabi"]
